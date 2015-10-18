@@ -1,0 +1,222 @@
+﻿body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#nav{
+    height: 90px;
+    background-color:#003347;
+}
+
+#nav li{
+    color:white;
+}
+
+
+.navbar-brand{
+    margin-left: -15px;
+}
+
+#links{
+    margin-top: 20px;
+    font-size:16px;
+    font-weight:normal;
+    font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    float:right;
+}
+
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 70px;
+
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+.navbar .nav > li > a {
+
+    color:#c9e4ef;
+    text-decoration: none;
+    white-space:nowrap;
+}
+
+.navbar .nav > li >a:hover{
+    border-bottom: 4px solid;
+    padding-bottom:3px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.validation-summary-valid {
+     display: none;
+}
+
+/* Augen Quiz styles */
+.flip-container .back,
+.flip-container .front {
+
+     border: 5px solid #00bcf2;
+     padding-bottom: 30px;
+     padding-top: 30px;
+}
+
+#content {
+    position:relative;
+    background:#fff;
+    padding:50px 0 0 0;
+}
+
+.option {
+     width:140px;
+     margin: 5px;
+}
+
+div.correct p {
+     color: green;
+}
+
+div.incorrect p {
+     color: red;
+}
+
+.btn {
+     border-radius: 0;
+}
+
+.slider {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    background: #e6e6e6;
+    border: 20px solid #FFF;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.arrow {
+    position: absolute;
+    z-index: 1002;
+    display: block;
+    top: 50%;
+    margin-top: -35px;
+    width: 36px;
+    height: 71px;
+    outline: none;
+    cursor: pointer;
+    background: url(/Image/blank.gif) no-repeat;
+}
+
+.arrow.prev {
+    opacity: 0.2;
+    left: 20px;
+    background-image: url(/Image/paddle_prev_999.png);
+    transition: 0.2s linear all;
+}
+
+.arrow.next {
+    opacity: 0.2;
+    right: 20px;
+    background-image: url(/Image/paddle_next_999.png);
+    transition: 0.2s linear all;
+}
+
+.arrow.prev:hover {
+    opacity: 1;
+    background-image: url(/Image/paddle_prev_fff.png);
+}
+
+.arrow.next:hover {
+    opacity: 1;
+    background-image: url(/Image/paddle_next_fff.png);
+}
+
+
+
+/*---------------------------------------------------------
+NAV
+---------------------------------------------------------*/
+
+#slideNav {
+    text-align: center;
+    display: block;
+    position: absolute;
+    z-index: 1002;
+    left: 0;
+    bottom: -4px;
+    right: 0;
+    height: 48px;
+}
+
+.nonDraggableImage{
+    -webkit-user-drag: none;
+}
+
+#slideNav .wrapper {
+    margin: 0 auto;
+    width: 100%;
+    padding: 1em 0 .8em;
+}
+
+#slideNav ul {
+    margin: 0;
+    width: 100%;
+}
+
+#slideNav .dot, #slideNav .dot a {
+    display: inline-block;
+    zoom: 1;
+}
+
+.dots .dot {
+    position: relative;
+    margin: 0 8px;
+    width: 12px;
+    height: 12px;
+}
+
+.dots .dot a {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 6px;
+    height: 6px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: #FFF;
+    border: 1px solid transparent;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: background-color 0.25s, border-color 0.25s;
+    -moz-transition: background-color 0.25s, border-color 0.25s;
+    transition: background-color 0.25s, border-color 0.25s;
+}
+
+.dots .dot a.active {
+    border-color: #FFF;
+    background-color: transparent;
+}
+
